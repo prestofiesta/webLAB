@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Веб-разработчик Ким И.А.</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/main.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <nav class="main-menu">
+          <a href="#about">Обо мне</a>
+          <a href="#skills">Навыки</a>
+          <a href="#technologies">Технологии</a>
+        </nav>
+        <div class="text-center py-5">
+          <h1 class="name">Ким Ирина Алексеевна</h1>
+          <h2>Веб-разработчик</h2>
+          <p class="w-50 mx-3 mx-auto">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero
+            reprehenderit dicta consectetur at doloremque necessitatibus,
+            distinctio quam accusantium itaque nostrum nesciunt, sunt fuga qui,
+            dolore magni neque unde quia minima.
+          </p>
+          <a class="btn contact-me-btn" href="mailto:email@adress.ru"
+            >Написать мне</a
+          >
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <section id="about">
+          <h1>Обо мне</h1>
+          <figure class="avatar">
+            <img src="images/person.png" alt="Person" />
+          </figure>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. In saepe
+            minus optio tempora, nemo a odio nulla neque labore repellat,
+            quaerat reprehenderit! Accusamus, nisi molestias vel rerum
+            repellendus possimus provident.
+          </p>
+        </section>
+        <section id="skills">
+          <h1>Навыки</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum placeat
+            nostrum beatae dignissimos, libero, aliquid culpa veritatis magni ex
+            ea itaque blanditiis nulla! Id culpa hic modi est incidunt
+            dignissimos!
+          </p>
+          <div class="text-right">
+            <a class="btn" href="skills.html">Подробнее</a>
+          </div>
+        </section>
+        <section id="technologies">
+          <h1>Технологии</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis
+            quae eius sequi, ducimus laborum ipsum perferendis quia harum
+            provident, labore blanditiis. Inventore excepturi ab voluptates, eos
+            pariatur reiciendis nulla incidunt.
+          </p>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Bootstrap</li>
+          </ul>
+          <div class="text-right">
+            <a class="btn" href="tecnologies.html">Подробнее</a>
+          </div>
+        </section>
+      </div>
+      <h1>Форма связи</h1>
+      <div class="container">
+        <form
+          action="https://httpbin.org/post"
+          <!-- method="Post" -->
+          enctype="multipart/form-data"
+        >
+          <input type="hidden" name="user_id" value="6" />
+          <div class="form-group">
+            <label class="form-label" for="name">ФИО</label>
+            <input
+              id="name"
+              type="text"
+              name="name"
+              placeholder="Введите имя"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="email">Email</label>
+            <input
+              id="email"
+              type="email"
+              name="email"
+              placeholder="Введите email"
+            />
+          </div>
+
+          <div class="form-group">
+            <p class="form-label">Как вы узнали o нас?</p>
+            <input
+              type="radio"
+              name="source"
+              id="advertising"
+              value="advertising"
+            />
+            <label for="advertising">Реклама в интернете</label>
+            <input type="radio" name="source" id="friends" value="friends" />
+            <label for="friends">Рассказали знакомые</label>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="category">Категория обращения</label>
+            <select name="category" id="category"></select>
+            <option value="proposal">Предложение</option>
+            <option value="grievance">Жалоба</option>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="message">Текст сообщения</label>
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="10"
+              placeholder="Введите сообщение"
+            ></textarea>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="attachment">Вложение</label>
+            <input type="file" name="attachment" id="attachment" />
+          </div>
+          <div class="group-form">
+            <input
+              type="checkbox"
+              name="agreement"
+              id="agreement"
+              value="yes"
+            />
+            <label for="agreement"
+              >Даю согласие на обработку персональных данных</label
+            >
+          </div>
+          <input class="btn" type="submit" value="Отправить" />
+        </form>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container">&copy; Ким И.А.</div>
+    </footer>
+  </body>
+</html>
